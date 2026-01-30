@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "repetphrase",
+	"version": "${version}",
+	"name": "RePetPhrase",
+	"description": "自动修改和替换发送的消息。",
+	"authors": [
+		"Carbo"
+	],
+	"contact": {
+		"homepage": "https://carbonicx.top/",
+		"sources": "https://carbonicx.top/"
+	},
+	"license": "MIT",
+	"icon": "assets/repetphrase/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.carbo.repetphrase.RePetPhrase"
+		],
+		"client": [
+			"com.carbo.repetphrase.RePetPhraseClient"
+		],
+		"modmenu": [
+			"com.carbo.repetphrase.compat.ModMenuCompat"
+		]
+	},
+	"mixins": [
+		"repetphrase.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*",
+		"fabric": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
